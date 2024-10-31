@@ -1,0 +1,303 @@
+.container{
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    background-color: #fff;
+}
+
+.container .marginbox 
+{
+    margin:  10px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.container .image
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgb(220, 227, 248);
+}
+
+.image .girlImagefront
+{
+   
+    width: 60%;
+}
+
+.container .textboxhome
+{
+    background: transparent;
+    margin-top: 30px;
+}
+
+
+.container .Texts
+{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.Texts #homeh1
+{
+    color: black;
+    font-size: 30px;
+    top: 30px;
+    transition: 0.5s;
+}
+
+.Texts span
+{
+    color: #3483EE;
+}
+
+.Texts .subtext
+{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.subtext p{
+    font-size: 15px;
+    color: rgb(137, 138, 139);
+    line-height: 24px;
+}
+
+.Texts .homebtn
+{
+    margin-top: -20px;
+    padding: 15px 15px;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #5d68ee;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+.container #copy
+{
+    text-align: center;
+    position: relative;
+    top: 30px;
+    color: #00000052;
+    font-size: 12px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#homeh1 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.subtext{
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.girlImagefront{
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.homebtn{
+    animation: fadeIn 2s ease-in-out;
+}
+
+@media only screen and (min-width: 910px) {
+    .shadow{
+        background-color:aliceblue;
+    }
+
+    .container{
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        background-color: aliceblue;
+    }
+
+    .container .marginbox
+    {
+        margin: auto;
+        margin-top: 30px;
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container .image
+    {
+        width: 50%;
+        height: 83.5vh;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+    }
+    .image .girlImagefront
+    {
+      
+        width: 65%;
+    }
+
+
+    .container .textboxhome
+    {   
+        width: 50%;
+        background: none;
+        margin-top: 45px;
+        display: flex;
+        height: auto;
+        text-align: left;
+        background: transparent;
+    }
+
+    .textboxhome .Texts{
+        width: 100%;
+        height: auto;
+        text-align: left;
+        margin-top: 25px;
+    }
+    
+     .Texts #homeh1
+    {
+        font-family: "Montserrat", sans-serif;
+        font-size: 44px;
+        font-weight: bold;
+        font-style: normal;
+        transform: scale(20px);
+    }
+     .Texts .homebtn
+    {
+        padding: 15px 10px;
+        cursor: pointer;
+        width: 25%;
+        border-radius: 5px;
+        background-color: #5d68ee;
+        border: none;
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .Texts .homebtn:hover
+    {
+        color: white;
+        background-color: #2a3396;
+        transition: 0.5s;
+    }
+    .Texts .subtext
+    {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 13px;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    #homeh1 {
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .subtext{
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .girlImagefront{
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .homebtn{
+        animation: fadeIn 2s ease-in-out;
+    }
+}

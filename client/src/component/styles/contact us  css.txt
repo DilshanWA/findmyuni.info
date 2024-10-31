@@ -1,0 +1,437 @@
+.popup {
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+/* Popup content */
+.popup-content {
+  box-sizing: content-box;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: #e9e9e9;
+  transform: rotateY('rotate');
+  animation: fadeIn 0.8s ease-in-out;
+  overflow-y: scroll;
+}
+
+.close #close{
+  position: relative;
+  position: static;
+  color: #000000;
+  font-size: 20px;
+  padding: 8px 8px;
+  margin-left: 87%;
+  top: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+
+}
+
+.boxs1 .imagebox img{
+  display: none;
+}
+
+
+.boxs1 .textbox{
+  margin: 50px 22px;
+  text-align: left;
+}
+
+.textbox h6
+{
+  font-size: 25px;
+  position: relative;
+  top: -35px;
+}
+
+.boxs1 .textbox p
+{
+  text-align: start;
+  position: relative;
+  margin: -29px 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close #close:hover
+{
+  background-color: #100133;
+  color: #fff;
+}
+
+
+.boxs2 .formbox
+{
+  margin: auto;
+  scrollbar-width: 500px;
+  margin-top: -40px;
+  width: 90%;
+  height: auto;
+  padding: 12px 0;
+ 
+}
+
+
+.formbox h4
+{
+  text-align: left;
+}
+
+.formbox .input-boxes
+  {
+    margin:0 auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .input-boxes input
+  {
+    padding: 19px 10px;
+    border: none;
+    border: 1px solid #000;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+
+  .input-boxes textarea{
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #000;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 15vh;
+    outline: none;
+    resize: none;
+    margin: 5px 0;
+  }
+
+
+  .formbox  .btn-boxes
+  {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .btn-boxes button
+  {
+    padding: 19px 12px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+  }
+
+
+  .btn-boxes #submit
+  {
+    background-color: #202565;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .btn-boxes #clear
+  {
+    border:1px solid #1A1C55;
+    color: #1A1C55;
+    cursor: pointer;
+  }
+
+  .input-boxes input:focus{
+    border: 2px solid #1A1C55;
+  }
+
+  .input-boxes textarea:focus{
+    border: 2px solid #1A1C55;
+  }
+
+  .popup-content #downclose
+  {
+    display: none;
+  }
+
+  .boxs2 .bottomicon
+  {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+
+  }
+
+  .bottomicon #bottomIcon
+  {
+    margin: 10px ;
+    cursor: pointer;
+    padding: 13px 13px;
+    border: 1px solid #1a1c556e;
+    color: #1a1c556e;
+    border-radius: 20px;
+    background-color: transparent;
+
+  }
+
+
+@media only screen and (min-width: 910px){ 
+ 
+ .popup {
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+  }
+
+  /* Popup content */
+  .popup-content {
+    margin: auto;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+    background-color: #e9e9e9;
+    transform: rotateY('rotate');
+    animation: fadeIn 0.8s ease-in-out; 
+    overflow-y: hidden;
+
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .popup-content #downclose
+  {
+    display: block;
+  }
+
+  .popup-content #uperclose
+  {
+    display: none;
+  }
+
+  .close #close{
+    position: relative;
+    color: #000000;
+    font-size: 20px;
+    float: right;
+    padding: 8px 8px;
+    left: -15px;
+    top: 7px;
+    border-radius: 50px;
+    cursor: pointer;
+
+  }
+
+  .close #close:hover
+  {
+    background-color: #100133;
+    color: #fff;
+    position: relative;
+    size: 70px;
+    float: right;
+    transition: 0.5s;
+    font-weight: bolder;
+  }
+
+
+  .popup-content .boxs1
+  {
+    width: 60%;
+    height: auto;
+  }
+
+  .popup-content .boxs2
+  {
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boxs1 .textbox
+  {
+    margin: 70px 60px;
+    height: auto;
+  }
+
+  .textbox h6
+  {
+    line-height: 38px;
+    font-family: poppins;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .boxs1 .textbox p
+  {
+    text-align: start;
+    position: relative;
+    margin-top: -20px;
+  }
+  .boxs1 .imagebox
+  {
+    margin: 10px auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .boxs1 .imagebox img{
+    display: block;
+    width: 50%;
+  }
+  .boxs2 .formbox
+  {
+    width: 80%;
+    margin-top: 40px;
+    height: 70vh;
+    padding: 12px 0;
+    background-color: transparent;
+  }
+
+  .formbox h4
+  {
+    margin-left: 0px;
+    position: relative;
+    margin-top: 15px;
+  }
+
+  .formbox .input-boxes
+  {
+    margin:0 auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .input-boxes input
+  {
+    padding: 12px 0px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .input-boxes input:focus{
+    border: none;
+    border-bottom: 2px solid #1A1C55;
+  }
+
+  .input-boxes textarea:focus{
+    border: none;
+    border-bottom: 2px solid #1A1C55;
+  }
+
+  .input-boxes textarea{
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 0;
+    height: 7vh;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    margin: 5px 0;
+  }
+
+  .formbox  .btn-boxes
+  {
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .btn-boxes button
+  {
+    padding: 13px 12px;
+    width: 100%;
+    margin: 2px;
+    cursor: pointer;
+  }
+
+  .btn-boxes #submit
+  {
+    background-color: #202565;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .btn-boxes #clear
+  {
+    border: 1px solid #1A1C55;
+    color: #1A1C55;
+    cursor: pointer;
+  }
+
+  .boxs2 .bottomicon
+  {
+    margin: auto;
+    width: 80%;
+    height: auto;
+    margin-top: -20px;
+  }
+
+  .bottomicon #bottomIcon
+  {
+    margin: 10px ;
+    cursor: pointer;
+    padding: 9px 10px;
+    border: 1px solid #1A1C55;
+    color: #1001336c;
+    border-radius: 20px;
+    background-color: transparent;
+
+  }
+}

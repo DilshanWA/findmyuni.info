@@ -1,0 +1,256 @@
+.modalbox
+{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: rotateY('angle');
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .modalbox {
+
+    transform: rotateY('angle');
+  }
+  
+  .boxinner {
+    animation: fadeIn 0.1s ease-out; 
+  }
+  
+  .boxinner:hover {
+    transform: scale(0.1s);
+    transition: transform 0.1s ease-in-out;
+  }
+  
+
+
+.boxinner {
+    width: 80%;
+    height: auto;
+    padding: 15px 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.boxinner h3
+{
+  top: -19px;
+  font-size: 15px;
+  position: relative;
+  color: #272727;
+}
+
+.boxinner .btn-ok
+{
+    margin-top: 18px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #265fad;
+    width: 25%;
+    padding: 7px 12px;
+}
+
+.boxinner .SuccessImage
+{
+    width: 60%;
+    height: 70%;
+    margin-left: 15px;
+    margin-top: -26px;
+    margin-bottom: 18px;
+}
+
+.boxinner .btn-ok:hover
+{
+    background-color: #1c4175;
+}
+
+.boxinner p
+{
+    margin-top: -12px;
+    font-size: 11px;
+    color: rgb(116, 116, 116);
+}
+
+.boxinner .textbox1
+{
+  width: 60%;
+ 
+}
+
+@media only screen and (min-width: 615px){
+  .boxinner {
+    width: 70%;
+    height: auto;
+    padding: 19px 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .boxinner .btn-ok
+  {
+    margin-top: 18px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #265fad;
+    width: 25%;
+    padding: 9px 12px;
+  }
+
+  .boxinner .SuccessImage
+  {
+      width: 55%;
+      height: 70%;
+      margin-left: 15px;
+      margin-top: -25px;
+      margin-bottom: 18px;
+  }
+  .boxinner h3
+  {
+    top: -19px;
+    font-size: 19px;
+    position: relative;
+    color: #272727;
+  }
+
+}
+
+@media only screen and (min-width: 760px){
+  .boxinner {
+    width: 60%;
+    height: auto;
+    padding: 19px 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .boxinner .btn-ok
+  {
+    margin-top: 18px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #265fad;
+    width: 25%;
+    padding: 9px 12px;
+  }
+
+  .boxinner .SuccessImage
+  {
+      width: 60%;
+      height: 70%;
+      margin-left: 15px;
+      margin-top: -25px;
+      margin-bottom: 18px;
+  }
+  .boxinner h3
+  {
+    top: -19px;
+    font-size: 19px;
+    position: relative;
+    color: #272727;
+  }
+
+}
+
+
+@media only screen and (min-width: 860px){
+  .boxinner {
+    width: 35%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .boxinner .btn-ok
+  {
+    margin-top: 18px;
+    margin-bottom: 11px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #265fad;
+    width: 25%;
+    padding: 9px 12px;
+  }
+
+  .boxinner .SuccessImage
+  {
+      width: 70%;
+      height: 72%;
+      
+  }
+  .boxinner h3
+  {
+    top: -19px;
+    font-size: 17px;
+    position: relative;
+    color: #272727;
+  }
+
+}
+
+@media only screen and (min-width: 1023px){
+  .boxinner {
+    width: 35%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .boxinner .btn-ok
+  {
+    margin-top: 18px;
+    margin-bottom: 19px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #265fad;
+    width: 25%;
+    padding: 9px 12px;
+  }
+
+  .boxinner .SuccessImage
+  {
+      width: 70%;
+      height: 72%;
+      
+  }
+  .boxinner h3
+  {
+    top: -19px;
+    font-size: 17px;
+    position: relative;
+    color: #272727;
+  }
+}

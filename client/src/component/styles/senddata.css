@@ -1,0 +1,163 @@
+.mainf {
+    width: 100%;
+    height: auto;
+    background-color: rgb(231, 231, 231);
+    position: absolute;
+}
+
+.mainf .from1 {
+    width: 50%;
+    border-radius: 10px;
+    height: 97vh;
+    background-color: white;
+    margin: 70px auto;
+    text-align: center; /* Center the contents */
+}
+
+.from1 .text
+{
+    text-align: left;
+    padding: 15px 30px;
+}
+
+.text h5
+{
+    font-size: 30px;
+    z-index: -1;
+}
+
+.text p
+{
+    margin-top: -10px;
+}
+
+.from1 .rows
+{
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4px;
+}
+
+.rows .subStreem
+{
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    padding: 0 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    background-color: rgb(252, 252, 252);
+  
+}
+
+.rows .subjects
+{
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    padding: 0 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    background-color: rgb(252, 252, 252);
+}
+
+.from1 .inputbox
+{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4px;
+}
+
+.inputbox input
+{
+    width: 93%;
+    height: 50px;
+    margin: 5px;
+    padding: 0 14px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    background-color: rgb(252, 252, 252);
+}
+
+.from1 .Districts
+{
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    padding: 0 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    background-color: rgb(252, 252, 252);
+}
+
+.rows .University
+{
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    padding: 0 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    background-color: rgb(252, 252, 252);
+}
+
+.rows .btn-class
+{
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.btn-class .submit
+{
+    width: 100%;
+    height: auto;
+    padding: 16px 0;
+    border: none;
+    background-color: #202565;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.btn-class .submit:hover
+{
+    background-color: #343ca7;
+}
+
+.btn-class button
+{
+    width: 100%;
+    height: auto;
+    padding: 16px 0;
+    border: none;
+    background-color: rgb(4, 176, 255);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.btn-class .resit
+{
+    background-color: red;
+}
+
+.btn-class .resit:hover
+{
+    background-color: rgb(199, 0, 0);
+}

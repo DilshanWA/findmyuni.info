@@ -1,0 +1,73 @@
+import React, { useState } from 'react';
+import { FaUser, FaLock } from "react-icons/fa";
+import '../styles/serverdlogin.css';
+import { useNavigate } from 'react-router-dom';
+
+const ServerLogin = () => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate()
+
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    if (!username || !password) {
+      console.log('Please fill in both username and password');
+      return;
+    }
+  
+    try {
+      const response = await fetch('http://localhost:4000/Serverlogin', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password }),
+      });
+  
+      if (response.ok) {
+        console.log('Data sent...');
+        const data = await response.json();
+        console.log(data);
+        navigate('/Datafill');
+      } else {
+        console.error('Request failed:', response.statusText);
+      }
+    } catch (error) {
+      console.log(`All sending operations failed... ${error}`);
+    }
+  }
+  
+
+  return (
+    <div className='bodybox'>
+      <div className="form">
+        <h2>LOGIN</h2>
+        <form className="down" onSubmit={handleLogin}>
+          <div className="inputboxs">
+            <FaUser className='icon0' />
+            <input
+              type="text"
+              placeholder='username'
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+          <div className="inputboxs">
+            <FaLock className='icon0' />
+            <input
+              type='password'
+              placeholder='password'
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <div className="button-box">
+            <button type="submit">LOGIN</button>
+          </div>
+          <p id='link'>forgotten password</p>
+        </form>
+      </div>
+    </div>
+  );
+}
+
+export default ServerLogin;
